@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/app.js",
     "start:dev": "nodemon src/app.js",
-    "test": "jest --setupFiles dotenv/config",
+    "test": "jest --runInBand --setupFiles dotenv/config --testTimeout 10000",
     "test:watch": "jest --runInBand --watchAll --coverage --setupFiles dotenv/config --collectCoverage true --testTimeout 10000",
     "migrate": "node-pg-migrate",
     "migrate:test": "node-pg-migrate -f config/database/test.json"
