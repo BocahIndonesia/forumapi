@@ -51,7 +51,7 @@ container.register([
         },
         {
           name: 'accessTokenAge',
-          concrete: parseInt(process.env.ACCCESS_TOKEN_AGE, 10)
+          concrete: Number(process.env.ACCCESS_TOKEN_AGE)
         }
       ]
     }
