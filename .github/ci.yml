@@ -36,5 +36,7 @@ jobs:
         PGDATABASE: ${{ secrets.PGDATABASE_TEST }}
         PGPASSWORD: ${{ secrets.PGPASSWORD_TEST }}
         PGPORT: ${{ secrets.PGPORT_TEST }}
+        SALT_HASH: ${{ secrets.SALT_HASH }}
         ACCESS_TOKEN_KEY: ${{ secrets.ACCESS_TOKEN_KEY }}
         REFRESH_TOKEN_KEY: ${{ secrets.REFRESH_TOKEN_KEY }}
+        ACCCESS_TOKEN_AGE: ${{ secrets.ACCESS_TOKEN_AGE }}
