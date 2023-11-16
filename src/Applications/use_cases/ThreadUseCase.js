@@ -73,7 +73,7 @@ module.exports = class ThreadUseCase {
         ...comment,
         isDelete: comment.is_delete,
         replies: replies.map(reply => new ArrayItemReply({ ...reply, isDelete: reply.is_delete })),
-        likeCount: likes.length + 1
+        likeCount: likes.length
       }))
     }
 
