@@ -1,7 +1,8 @@
 node_modules
 coverage
 .env
-auth-api-app-server.pem
+gcp_key
+gcp_key.pub
 package-lock.json
 config/database/test.json
 nginx.conf
